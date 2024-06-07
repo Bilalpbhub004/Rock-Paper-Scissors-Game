@@ -1,0 +1,86 @@
+.scoreCtn{
+    display: flex;
+    justify-content: space-between;
+}
+.scoreCtn h3{
+
+    margin-top: 0;
+    padding: 20px 0;
+    background-color: #181848;
+    color: #fff;
+}
+.score{
+    width: 200px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.results{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 100px;
+height: 200px;
+}
+
+.playerHand,
+.computerHand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    position: relative;
+}
+.resultsWinner{
+
+    font-size: 32px;
+    color: #fff;   
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+.resultsMessage{
+
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+.timer{
+    color: #fff;
+    font-size: 200px;
+    font-weight: bold;
+}
+.playerShake{
+
+    animation: playerShakeAnimation 0.8s ease-in-out infinite;
+}
+.computerShake{
+
+    animation: computerShakeAnimation 0.8s ease-in-out infinite;
+}
+@keyframes playerShakeAnimation{
+
+
+    0%,
+    100%{
+        transform: rotate(100deg);
+    }
+    50%{
+        transform: rotate(80deg);
+    }
+}
+@keyframes computerShakeAnimation{
+
+
+    0%,
+    100%{
+        transform: scaleY(-1) rotate(-80deg);
+    }
+    50%{
+        transform: scaleY(-1) rotate(-100deg);
+    }
+}

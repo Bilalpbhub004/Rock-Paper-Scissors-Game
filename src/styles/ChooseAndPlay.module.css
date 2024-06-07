@@ -1,0 +1,27 @@
+.choiceBtnCtn{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.choiceBtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+}   
+.playBtn{
+    background-color: bisque;
+    padding: 10px 30px;
+    margin-top: 50px;
+    font-weight: bold; 
+}
+.bounce{
+    transition: all 0.2s ease-in-out;
+}
+.bounce:hover{
+
+    transform: translateY(-10px);
+}
+.activeChoice {
+    background-color: orange;
+}
